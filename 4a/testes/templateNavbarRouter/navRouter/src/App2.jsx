@@ -39,7 +39,7 @@ import { Link, Outlet, createBrowserRouter, RouterProvider, useLocation } from '
 import { Menu, X } from 'lucide-react';
 
 // Componentes das páginas (exemplo)
-const Home = () => <div>Página Home</div>;
+const Home = () => <div>Página Home <p>Tip: O readme deste projetinho tem informações sobre responsividade no Tailwind.</p></div>;
 const Sobre = () => <div>Página Sobre</div>;
 const Produtos = () => <div>Página Produtos</div>;
 const Contato = () => <div>Página Contato</div>;

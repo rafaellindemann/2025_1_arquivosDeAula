@@ -1,3 +1,5 @@
+// esta é a primeira versão, mais simples e direta. App2 tem uma mais embelezada
+
 import { useState } from 'react';
 import { Link, Outlet, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
