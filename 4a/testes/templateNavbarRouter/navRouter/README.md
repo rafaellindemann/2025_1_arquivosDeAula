@@ -259,4 +259,4 @@ Algumas observações importantes:
 4. Mudamos tamanhos de fonte, padding e margin para diferentes telas
 5. Alteramos layouts de `flex-col` para `flex-row` em telas maiores
 
- [Este Notion faz referência ao template](https://www.notion.so/rafaellindemann/Demo-de-um-template-responsivo-com-Tailwind-React-e-Router-182d393ff68e804d990ac9ecb70ac4c3)
+ [>Este Notion faz referência ao template<](https://www.notion.so/rafaellindemann/Demo-de-um-template-responsivo-com-Tailwind-React-e-Router-182d393ff68e804d990ac9ecb70ac4c3)
