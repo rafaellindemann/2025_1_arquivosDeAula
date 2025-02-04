@@ -26,6 +26,8 @@ function Corpo() {
             {pontosEstado}
         </div>
 
+        <p>Paramos em estado***</p>
+
     </div>
   )
 }
