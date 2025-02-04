@@ -1,1 +1,5 @@
+planilha da SA: 
 https://docs.google.com/spreadsheets/d/1T7JIiRRLUkg5pGvbUWbG6sVIdChXCs_kb7iIGYrBdlQ/edit?usp=sharing
+
+Geralzão de React:
+https://rafaellindemann.notion.site/React-JS-e4cf31e0fc1e465190610e0c440571b2
