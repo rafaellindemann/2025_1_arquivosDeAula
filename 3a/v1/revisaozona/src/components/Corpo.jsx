@@ -2,6 +2,11 @@ import { useState } from 'react';
 import './Corpo.css'
 import Produto from './Produto';
 function Corpo() {
+    const [inputNome, setInputNome] = useState('')
+    const [inputDescricao, setInputDescricao] = useState('')
+    const [inputPreco, setInputPreco] = useState('')
+    const [inputImagem, setInputImagem] = useState('')
+
     const [produtos, setProdutos] = useState([
         {
             id: Date.now(),
@@ -36,6 +41,20 @@ function Corpo() {
 
         },
     ]);
+
+    function cadastrarProduto(){
+        const produto = {
+            id: Date.now(),
+            nome: inputNome,
+            preco: Number(inputPreco),
+            descricao: inputDescricao,
+            img: inputImagem
+            
+        }
+        // console.log(produto);
+        setProdutos([...produtos, produto])
+        
+    }
 
     let pontos = 0;
     const [pontosEstado, setPontosEstado] = useState(0)
@@ -75,6 +94,39 @@ function Corpo() {
             {produtos.map((produto) => (
                 <Produto key={produto.id} nome={produto.nome} preco={produto.preco} descricao={produto.descricao} img={produto.img} />
             ))}
+        </div>
+
+        <div className="formCadastro">
+            <div className="inputContainer">
+                <label htmlFor="">Produto:</label>
+                <input type="text" 
+                    value={inputNome}
+                    onChange={(event) => setInputNome(event.target.value)}
+                />
+            </div>
+            <div className="inputContainer">
+                <label htmlFor="">Preço:</label>
+                <input type="text" 
+                    value={inputPreco}
+                    onChange={(event) => setInputPreco(event.target.value)}
+                />
+            </div>
+            <div className="inputContainer">
+                <label htmlFor="">Descrição: </label>
+                <input type="text" 
+                    value={inputDescricao}
+                    onChange={(event) => setInputDescricao(event.target.value)}
+                />
+            </div>
+            <div className="inputContainer">
+                <label htmlFor="">Imagem: </label>
+                <input type="text" 
+                    value={inputImagem}
+                    onChange={(event) => setInputImagem(event.target.value)}
+                />
+            </div>
+            <button onClick={cadastrarProduto}>Cadastrar</button>
+
         </div>
 
 
