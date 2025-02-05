@@ -1,0 +1,22 @@
+.container-produto{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-produto{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.promo{
+    color: green;
+    font-size: 36px;
+}

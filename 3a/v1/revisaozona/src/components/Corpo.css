@@ -1,4 +1,12 @@
 .corpo-container{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: calc(100vh - 60px);
+    padding: 25px;
+}
+
+.container-cards, .lista-cards{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
 }

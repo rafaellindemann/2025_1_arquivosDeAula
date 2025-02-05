@@ -2,7 +2,7 @@ import './Cabecalho.css'
 function Cabecalho() {
   return (
     <div className="container-cabecalho">
-        Cabecalho venda de cascalho
+        Cabecalho venda de coisa por cascalho
     </div>
   )
 }
