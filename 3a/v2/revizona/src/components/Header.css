@@ -1,4 +1,8 @@
 .container-header{
     background-color: beige;
     height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 25px; */
 }
