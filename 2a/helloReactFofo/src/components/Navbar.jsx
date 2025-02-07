@@ -3,7 +3,6 @@ function Navbar(){
     return(
         <div className='container-navbar'>
             <p>LoGo</p>
-
         </div>
     )
 }
