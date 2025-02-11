@@ -1,5 +1,6 @@
 import './Produto.css'
 import { BsFire } from "react-icons/bs";
+import { GiBrazil } from "react-icons/gi";
 // function Produto(props) {
 function Produto({img, nome, preco, descricao}) {
   return (
@@ -14,6 +15,8 @@ function Produto({img, nome, preco, descricao}) {
             <div className='promo'>
                 {/* <p>Promoção</p>  */}
                 <BsFire />
+                <GiBrazil />
+                <p>🌎</p>
             </div>
         }
     </div>
