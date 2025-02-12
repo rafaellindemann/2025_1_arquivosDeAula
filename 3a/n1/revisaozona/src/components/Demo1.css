@@ -1,3 +1,11 @@
 .container-demo1{
     border: 1px solid red;
 }
+
+.img-dev{
+    width: 35%;
+}
+
+.icone:hover{
+    scale: 1.1;
+}
