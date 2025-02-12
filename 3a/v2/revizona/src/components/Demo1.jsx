@@ -28,6 +28,7 @@ function Demo1() {
         <div>
             estado: {estado}
             <button onClick={incrementarEstado}>+</button>
+            
         </div>
     </div>
   )

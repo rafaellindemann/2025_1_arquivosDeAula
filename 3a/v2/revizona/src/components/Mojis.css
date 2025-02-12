@@ -1,0 +1,13 @@
+.emoji{
+    font-size: 200px;
+    background-color: #fb6f92;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(22, 0, 0, 0.5);
+}
+.container-mojis{
+    height: 100vh;
+    background-color: #ffb3c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
