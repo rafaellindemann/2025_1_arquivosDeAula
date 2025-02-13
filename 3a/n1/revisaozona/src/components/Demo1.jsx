@@ -6,9 +6,9 @@ function Demo1() {
     alert("Parabéns, você clicou!")
   }
 
-  const tratarEntrada = () => {
+  // const tratarEntrada = () => {
 
-  }
+  // }
   return (
     <div className='container-demo1'>
         <button onClick={responderClique}>Clique aqui</button>
