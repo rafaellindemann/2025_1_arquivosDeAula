@@ -1,15 +1,15 @@
 # Instagram
 
 ## Juca
-[link](https://google.com)
+[text](https://google.com)
 
 ## Abigail
-[link](https://google.com)
+[text](https://google.com)
 
 
 # TikTok
 
 ## Juca
-[link](https://google.com)    
+[text](https://google.com)    
 
 
