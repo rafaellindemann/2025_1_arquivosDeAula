@@ -1,0 +1,10 @@
+.container-card{
+    /* border: 1px solid var(--blue-violet); */
+    padding: 10px;
+    background-color: var(--amber);
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 10px var(--blue-violet); */
+    
+}
