@@ -1,0 +1,4 @@
+.container-home{
+    background-color: var(--orange-pantone);
+    min-height: 100vh;
+}
