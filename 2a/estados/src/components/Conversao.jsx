@@ -5,7 +5,7 @@ function Conversao() {
   const [dolar, setDolar] = useState(0)
 function converterRealPraDolar(){
   let entrada = Number(prompt("R$: "))
-  setDolar((entrada * 5.81).toFixed(2))
+  setDolar((entrada * 0.1731).toFixed(2))
   setReal(entrada)
 }
   return (
