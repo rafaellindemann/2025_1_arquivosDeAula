@@ -1,8 +1,8 @@
-# React + Vite
+# NomeDoProjeto
+Sistema de controle de informações relevantes e importantes para uma pessoa específica em um contexto genérico e aleatório. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Colaboradores
+ [Rafael Lindemann](https://github.com/rafaellindemann)
 
-Currently, two official plugins are available:
+ [texto clicável](link)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

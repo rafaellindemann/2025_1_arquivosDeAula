@@ -1,0 +1,20 @@
+:root{
+    --amber: #ffbe0bff;
+    --orange-pantone: #fb5607ff;
+    --rose: #ff006eff;
+    --blue-violet: #8338ecff;
+    --azure: #3a86ffff;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root, body, html{
+  min-height: 100vh;
+  background-color: var(--rose);
+}
+

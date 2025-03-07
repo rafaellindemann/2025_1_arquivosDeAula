@@ -1,0 +1,31 @@
+.container-navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+
+    background-color: var(--azure);
+}
+
+.p{
+    color: var(--azure );
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* background-color: red; */
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.p:hover{
+    background-color: var(--cor-4a);
+    color: var(--cor-2 );
+
+}
+
+.p:visited{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+
+}
