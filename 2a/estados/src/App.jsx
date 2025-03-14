@@ -1,5 +1,6 @@
 
 import './App.css'
+import AnoBissexto from './components/AnoBissexto'
 import Aviso from './components/Aviso'
 import Conversao from './components/Conversao'
 import Conversao2 from './components/Conversao2'
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <>
+      <AnoBissexto />
       <Aviso />
       <Conversao2 />
       <Conversao />
