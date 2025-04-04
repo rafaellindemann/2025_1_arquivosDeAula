@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Evento from './components/Evento'
 
 function App() {
   const[inputUsername, setInputUsername] = useState('')
@@ -35,6 +36,9 @@ function App() {
         <span className='msg-erro'>Credenciais inválidas</span>
       }
       <button onClick={efetuarLogin}>Login</button>
+
+      <Evento />
+    
     </div>
   )
 }
