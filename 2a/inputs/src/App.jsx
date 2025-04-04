@@ -4,11 +4,17 @@ import './App.css'
 function App() {
   const[inputUsername, setInputUsername] = useState('')
   const[inputSenha, setInputSenha] = useState('')
+  const[erro, setErro] = useState(false)
 
   function efetuarLogin(){
-    // GillBates
-    // 1235
-    alert(inputUsername)
+    // GillBates // 1235
+    if(inputUsername == 'GillBates' && inputSenha == '1235'){
+      setErro(false)
+      alert("Pode entrar")
+    }else{
+      // alert("erro #403")
+      setErro(true)
+    }
   }
 
   return (
@@ -25,6 +31,9 @@ function App() {
         value={inputSenha}
         onChange={(event) => setInputSenha(event.target.value)}
       />
+      {erro && 
+        <span className='msg-erro'>Credenciais inválidas</span>
+      }
       <button onClick={efetuarLogin}>Login</button>
     </div>
   )
