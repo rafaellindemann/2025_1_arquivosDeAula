@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 function Evento() {
     const[inputTeste, setInputTeste] = useState('')
     function testar(event){
