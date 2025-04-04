@@ -1,0 +1,22 @@
+    .container-github{
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 25px;
+        height: 80px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        font-size: 28px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    a{
+        text-decoration: none;
+        width: 80%;
+
+    }
+
+    .container-github:hover{
+        scale: 1.1;
+    }
