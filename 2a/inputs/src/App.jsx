@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Evento from './components/Evento'
+import PapaiNoel from './components/PapaiNoel'
 
 function App() {
   const[inputUsername, setInputUsername] = useState('')
@@ -20,6 +21,12 @@ function App() {
 
   return (
     <div className='container-app'>
+
+      <div>
+        <h1>papai noel</h1>
+        <PapaiNoel />
+      </div>
+
       <h1>Inputs controlados</h1>
       <label htmlFor="">Username</label>
       <input type="text" 

@@ -8,16 +8,25 @@ import OracaoBackend from './components/OracaoBackend'
 function App() {
   const[painel, setPainel] = useState('')
 
+  function tratarDevWeb(){
+    if(painel == ''){
+      setPainel(<OracaoDevWeb />)
+    }else{
+      setPainel('')
+    }
+  }
+
   return (
     <>
       <div>
-        <button onClick={() => setPainel(<OracaoDevWeb />)}>Oração Dev Web</button>
+        <button onClick={tratarDevWeb}>Oração Dev Web</button>
         <button onClick={() => setPainel(<OracaoFrontend />)}>Oração Frontend</button>
         <button onClick={() => setPainel(<OracaoBackend />)}>Oração Backend</button>
       </div>
       <div>
         {painel}
       </div>
+
     </>
   )
 }
