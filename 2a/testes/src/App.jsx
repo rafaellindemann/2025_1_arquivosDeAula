@@ -12,12 +12,14 @@ import Lesmas from './components/Lesmas'
 import Vovo from './components/Vovo'
 import Veia from './components/Veia'
 import TrajetoPomar from './components/TrajetoPomar'
+import Vovo2 from './components/Vovo2'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Vovo2 />
       <TrajetoPomar />
       <Vovo />
       <Lesmas />

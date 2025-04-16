@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Bondinho() {
   const [alunos, setAlunos] = useState('');
@@ -34,5 +34,4 @@ function Bondinho() {
     </div>
   );
 }
-
 export default Bondinho;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function Combustiveis() {
     const[inputAlcool, setInputAlcool] = useState('')
@@ -7,7 +7,6 @@ function Combustiveis() {
     const[totalAlcool, setTotalAlcool] = useState(0)
     const[totalGasolina, setTotalGasolina] = useState(0)
     const[totalDiesel, setTotalDiesel] = useState(0)
-
   return (
     <div className='container'>
         <h2>Combustiveis</h2>
@@ -23,7 +22,6 @@ function Combustiveis() {
             Diesel <input type="number" value={inputDiesel} onChange={(event)=>setInputDiesel(event.target.value)}/> 
             <button onClick={()=>setTotalDiesel(totalDiesel+Number(inputDiesel))}>Comprar</button>
         </div>
-
         <div>
             Total Álcool: {totalAlcool}
         </div>
@@ -33,11 +31,7 @@ function Combustiveis() {
         <div>
             Total Diesel: {totalDiesel}
         </div>
-
-
-
     </div>
   )
 }
-
 export default Combustiveis
