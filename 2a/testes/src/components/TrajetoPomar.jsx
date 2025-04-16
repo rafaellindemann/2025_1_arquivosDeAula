@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 function TrajetoPomar() {
     const[inputMaca, setInputMaca] = useState('')
     const[inputLaranja, setInputLaranja] = useState('')
@@ -11,8 +10,6 @@ function TrajetoPomar() {
     const[totalBergamota, setTotalBergamota] = useState(0)
     const[totalBanana, setTotalBanana] = useState(0)
     const[totalPera, setTotalPera] = useState(0)
-
-
   return (
     <div className='container'>
         <h2>Trajeto Pomar</h2>
@@ -36,21 +33,16 @@ function TrajetoPomar() {
             Pera - R$ 0,50 <input type="number" value={inputPera} onChange={(event)=>setInputPera(event.target.value)}/> 
             <button onClick={()=>setTotalPera(0.5*Number(inputPera))}>Comprar</button>
         </div>
-
         { totalMaca>0 && <div>{inputMaca}x Maçã: {totalMaca}</div> }
         { totalLaranja>0 && <div>{inputLaranja}x Laranja: {totalLaranja}</div> }
         { totalBergamota>0 && <div>{inputBergamota}x Bergamota: {totalBergamota}</div> }
         { totalBanana>0 && <div>{inputBanana}x Banana: {totalBanana}</div> }
         { totalPera>0 && <div>{inputPera}x Pera: {totalPera}</div> }
-
         <div>
             Total: R$ {(totalMaca+totalLaranja+totalBergamota+totalBanana+totalPera).toFixed(2)}
         </div>
-
-
-
     </div>
   )
 }
-
 export default TrajetoPomar
+

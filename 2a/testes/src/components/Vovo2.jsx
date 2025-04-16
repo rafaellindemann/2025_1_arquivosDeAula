@@ -1,15 +1,12 @@
 import { useState } from 'react';
-
 function Vovo2() {
   const [valorAntigo, setValorAntigo] = useState('');
   const [valorNovo, setValorNovo] = useState('');
   const [aumento, setAumento] = useState('');
   const[aumentoAbusivo, setAumentoAbusivo] = useState(false)
-
   function calcularAumento() {
     const antigo = Number(valorAntigo);
     const novo = Number(valorNovo);
-
     if (antigo > 0 && novo >= antigo) {
       const diferenca = novo - antigo;
       const porcentagem = (diferenca / antigo) * 100;
@@ -18,7 +15,6 @@ function Vovo2() {
       setAumento('Valores inválidos');
     }
   }
-
   return (
     <div className="container">
       <h2>Cartaz da Vovó Zazá</h2>
@@ -40,3 +36,5 @@ function Vovo2() {
 }
 
 export default Vovo2;
+
+
