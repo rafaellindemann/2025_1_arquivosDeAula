@@ -9,6 +9,7 @@ function Combustiveis() {
     const[totalDiesel, setTotalDiesel] = useState(0)
   return (
     <div className='container'>
+        
         <h2>Combustiveis</h2>
         <div>
             Álcool <input type="number" value={inputAlcool} onChange={(event)=>setInputAlcool(event.target.value)}/> 

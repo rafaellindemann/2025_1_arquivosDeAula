@@ -13,12 +13,15 @@ import Vovo from './components/Vovo'
 import Veia from './components/Veia'
 import TrajetoPomar from './components/TrajetoPomar'
 import Vovo2 from './components/Vovo2'
+import Desestruturacao from './components/Desestruturacao'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    
+      <Desestruturacao />
       <Vovo2 />
       <TrajetoPomar />
       <Vovo />
