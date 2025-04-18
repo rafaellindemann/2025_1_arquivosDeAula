@@ -19,3 +19,32 @@ function diminuir(){
     diferenca = n1 - n2
     alert("Diferença: " + diferenca)
 }
+
+function calcularEcoMoedas(){
+    let brinquedos, moedas
+    brinquedos = Number(prompt("Quantos brinquedos você trouxe?"))
+    if(brinquedos < 0){
+        alert("Digita direito, pirralho")
+    }else{
+        if(brinquedos > 3){
+            moedas = 3
+        }else{
+            moedas = brinquedos
+        }
+        alert("Moedas recebidas:🤩 " + moedas)
+    }
+    // if(brinquedos < 0){
+    //     alert("Digita direito, pirralho")
+    // }else{
+    //     if(brinquedos >= 0 && brinquedos <= 3){
+    //         moedas = brinquedos
+    //     }else{
+    //         if(brinquedos > 3){
+    //             moedas = 3
+    //         }
+    //     }
+    //     alert("Moedas recebidas: " + moedas)
+    // }
+
+}
+

@@ -1,0 +1,15 @@
+body{
+    min-height: 100vh;
+    /* background-color: aqua; */
+
+    background: hsla(217, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061ff", endColorstr="#60efff", GradientType=1 );
+
+}
