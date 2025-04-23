@@ -9,4 +9,4 @@ aksjfdvkashdfolvhaosidhvoassakdfhbgvs
 
 # Time de desenvolvimento
 [Eu](http://github.com/eu)
-(Tu)[http://github.com/tu]
+[Tu](http://github.com/tu)
