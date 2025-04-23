@@ -21,16 +21,16 @@ function App() {
         aria-label="Imagens de exemplo"
       >
         <SplideSlide>
-          <img src="https://placekitten.com/400/300" alt="Gatinho 1" />
+          <img src="/img/1.jpg" alt="Gatinho 1" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://placekitten.com/401/300" alt="Gatinho 2" />
+          <img src="/img/5.jpg" alt="Gatinho 2" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://placekitten.com/402/300" alt="Gatinho 3" />
+          <img src="/img/3.jpg" alt="Gatinho 3" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://placekitten.com/403/300" alt="Gatinho 4" />
+          <img src="/img/6.jpg" alt="Gatinho 4" />
         </SplideSlide>
       </Splide>
     </div>
