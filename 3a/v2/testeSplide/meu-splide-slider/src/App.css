@@ -1,36 +1,19 @@
-.container-app{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  background-color: rgb(43, 42, 42);
-  padding: 10px;
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+  text-align: center;
 }
 
-.cards{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-  background-color: rgb(60, 61, 59);
+img {
+  width: 100%;
+  border-radius: 12px;
 }
 
-.form-produto{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  color: aliceblue;
-  border: 1px solid aliceblue;
-  padding: 10px;
-  border-radius: 10px;
-}
 
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -71,4 +54,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
