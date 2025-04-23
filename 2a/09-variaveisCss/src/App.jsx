@@ -28,6 +28,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <img src="/img/farmarcia-logo-pq.PNG.png" alt="" />
       <div className="flex">
         <div className="item">1</div>
         <div className="item">2</div>
