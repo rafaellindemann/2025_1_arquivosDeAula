@@ -8,5 +8,5 @@ aksjfdvkashdfolvhaosidhvoassakdfhbgvs
 - Requisito 1
 
 # Time de desenvolvimento
-[Eu](http://github.com/eu)
-[Tu](http://github.com/tu)
+- [Eu](http://github.com/eu)
+- [Tu](http://github.com/tu)
