@@ -8,18 +8,29 @@ function DevGotchi() {
     if (!vivo) return;
 
     const intervalo = setInterval(() => {
-      setVida((vidaAtual) => {
-        if (vidaAtual <= 1) {
-          clearInterval(intervalo);
-          setVivo(false);
-          return 0;
+        if (vida<= 1) {
+            clearInterval(intervalo);
+            setVivo(false);
+            return 0;
         }
-        return vidaAtual - 1;
-      });
+        setVida((vidaAtual) => vidaAtual - 1);
     }, 1000);
 
     return () => clearInterval(intervalo);
   }, [vivo]);
+//     const intervalo = setInterval(() => {
+//       setVida((vidaAtual) => {
+//         if (vidaAtual <= 1) {
+//           clearInterval(intervalo);
+//           setVivo(false);
+//           return 0;
+//         }
+//         return vidaAtual - 1;
+//       });
+//     }, 1000);
+
+//     return () => clearInterval(intervalo);
+//   }, [vivo]);
 
   function curar(){
     if (vivo) {
