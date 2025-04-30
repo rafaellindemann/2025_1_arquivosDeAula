@@ -8,7 +8,7 @@ function DevGotchi() {
     if (!vivo) return;
 
     const intervalo = setInterval(() => {
-        if (vida<= 1) {
+        if (vida <= 1) {
             clearInterval(intervalo);
             setVivo(false);
             return 0;

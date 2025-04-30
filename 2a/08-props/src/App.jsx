@@ -21,6 +21,7 @@ function App() {
     console.log("Carregando dados...")
   ,[])
 
+
   function testar(){
     let produto = {
       id:Date.now(), 
@@ -36,6 +37,11 @@ function App() {
       preco: Number(inputPreco)
     }
     setProdutos([produto, ...produtos])
+  }
+
+  function deletarProduto(id){
+    let listaFiltrada = produtos.filter((p) => p.id !== id)
+    setProdutos(listaFiltrada)
   }
 
   return (
@@ -68,7 +74,7 @@ function App() {
 
       <div className="cards">
         {produtos.map((p) => (
-          <Produto key={p.id} modelo={p.modelo} preco={p.preco} id={p.id} />
+          <Produto key={p.id} modelo={p.modelo} preco={p.preco} id={p.id} deletarProduto={deletarProduto}/>
         ))}
       </div>
 
