@@ -14,13 +14,18 @@ import Veia from './components/Veia'
 import TrajetoPomar from './components/TrajetoPomar'
 import Vovo2 from './components/Vovo2'
 import Desestruturacao from './components/Desestruturacao'
+import Bomba2 from './components/Bomba2'
+import Bondinho2 from './components/Bondinho2'
+import Combustiveis2 from './components/Combustiveis2'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    
+      <Combustiveis2 />
+      <Bondinho2 />
+      {/* <Bomba2 /> */}
       <Desestruturacao />
       <Vovo2 />
       <TrajetoPomar />
