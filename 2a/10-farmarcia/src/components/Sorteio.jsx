@@ -10,8 +10,16 @@ function Sorteio() {
     ,[nomes])
 
     function cadastrarNome(){
+        // nomes.push(inputNome) NUNCA FAÇA ASSIM, É FEIO, É RUDE, É ERRADO
         setNomes([inputNome, ...nomes])
         setInputNome('')
+        // console.log(nomes); nem adianta
+    }
+
+    function sortearCliente(){
+        let i = Math.floor(Math.random() * nomes.length)
+
+        alert('Cliente sorteado: ' + nomes[i])
     }
 
 
@@ -26,7 +34,11 @@ function Sorteio() {
             onChange={(event) => setInputNome(event.target.value)}
         />
         <button onClick={cadastrarNome}>Cadastrar </button>
-        <button>Faltou Sortear</button>
+        <button onClick={sortearCliente}>Sortear</button>
+
+        {/* <div>
+            {nomes[0]}
+        </div> */}
         
     </div>
   )
