@@ -17,12 +17,18 @@ import Desestruturacao from './components/Desestruturacao'
 import Bomba2 from './components/Bomba2'
 import Bondinho2 from './components/Bondinho2'
 import Combustiveis2 from './components/Combustiveis2'
+import Financas from './components/Financas'
+import Financas2 from './components/Financas2'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
+      <Financas2 />
+      <Financas />
+
       <Combustiveis2 />
       <Bondinho2 />
       {/* <Bomba2 /> */}

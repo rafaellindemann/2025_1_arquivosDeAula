@@ -5,6 +5,11 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    /* padding-right: 20px; */
 
 }
+
+
+
+

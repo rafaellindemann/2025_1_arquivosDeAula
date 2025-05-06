@@ -11,7 +11,9 @@ function Sorteio() {
 
     function cadastrarNome(){
         setNomes([inputNome, ...nomes])
+        setInputNome('')
     }
+
 
   return (
     <div className='container-sorteio'>
@@ -23,10 +25,9 @@ function Sorteio() {
             value={inputNome}
             onChange={(event) => setInputNome(event.target.value)}
         />
-        <button onClick={cadastrarNome}>Cadastrar</button>
+        <button onClick={cadastrarNome}>Cadastrar </button>
         <button>Faltou Sortear</button>
         
-
     </div>
   )
 }
