@@ -39,6 +39,16 @@ function Sorteio() {
         {/* <div>
             {nomes[0]}
         </div> */}
+
+        {/* {
+            movimentacoes.map((m) => (
+                // <Pessoa />
+                <div>
+                    <p className='mov'>Nome:{m.nome}</p>
+                    <p className='mov'>Valor:{m.valor}</p>
+                </div>
+            ))
+        } */}
         
     </div>
   )
