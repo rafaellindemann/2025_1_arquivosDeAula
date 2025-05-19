@@ -1,0 +1,94 @@
+body, html, #root {
+  margin: 0;
+  height: 100%;
+  background: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.crt-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: radial-gradient(#010, #000);
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+}
+
+.crt-screen::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 255, 0, 0.02) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 10px;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.number-cell {
+  color: #00ff66;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.number-cell:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 6px #00ffcc, 0 0 10px #00ffcc;
+  transform: scale(1.6);
+}
+
+/* PERIGO GLITCH */
+.dangerous {
+  animation: glitch 1s infinite steps(2, end);
+  color: #ff0033;
+  text-shadow: 0 0 5px #ff0033, 0 0 10px #ff0033;
+  position: relative;
+  z-index: 3;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0) scale(1.2) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    transform: translate(-2px, 1px) scale(1.3) rotate(1deg);
+    opacity: 0.9;
+  }
+  20% {
+    transform: translate(2px, -1px) scale(1.4) rotate(-1deg);
+    opacity: 1;
+  }
+  30% {
+    transform: translate(-1px, 2px) scale(1.3) rotate(1deg);
+    opacity: 0.95;
+  }
+  40% {
+    transform: translate(1px, -2px) scale(1.2) rotate(-1deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) scale(1.2) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) scale(1.2) rotate(0deg);
+  }
+}
