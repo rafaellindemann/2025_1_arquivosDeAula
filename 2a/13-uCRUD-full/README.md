@@ -1,3 +1,6 @@
+***obs: na pasta backend-MySQL tem um arquivo "thunder-collection_clientes.json" com as requisições salvas para importar (Pode ser exportado para o Postman também). 
+
+
 # 🧾 UCRUD-FULLJS
 
 Microprojeto educativo fullstack com foco em simplicidade, clareza e independência tecnológica. Aqui você encontrará múltiplas implementações de frontend e backend para um CRUD de clientes, usando apenas JavaScript puro (Node.js + JS no front) ou React, e com suporte a múltiplos bancos de dados.
