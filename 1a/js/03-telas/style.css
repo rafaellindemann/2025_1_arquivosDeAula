@@ -1,0 +1,61 @@
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid #666; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-height: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);
+}
+
+#cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: none;
+    border: 1px solid #666;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-height: 100px;
+}
+
+.containerInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    border-radius: 5px;
+    height: 25px;
+}
+
+button{
+    background-color: #00ee00;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+button:hover{
+    background-color: aqua;
+    scale: 1.1;
+    /* color: #fff; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
