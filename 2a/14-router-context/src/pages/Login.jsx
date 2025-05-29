@@ -1,7 +1,21 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { GlobalContext } from '../contexts/GlobalContext'
+import { useNavigate } from 'react-router-dom'
 function Login() {
     const[inputUsername, setInputUsername] = useState('')
     const[inputSenha, setInputSenha] = useState('')
+    const{usuarios} = useContext(GlobalContext)
+    const navigate = useNavigate()
+
+    function efetuarLogin(){
+      const usuario = usuarios.find((u) => u.username == inputUsername && u.senha == inputSenha)
+      if(usuario){
+        alert("Login efetuado com sucesso")
+        navigate('/home')
+      }else{
+        alert("Credenciais incorretas")
+      }
+    }
   return (
     <div>
         <h1>Login</h1>
@@ -17,7 +31,7 @@ function Login() {
               onChange={(e) => setInputSenha(e.target.value)}
             />
         </div>
-        <button>Login</button>
+        <button onClick={efetuarLogin}>Login</button>
     </div>
   )
 }
