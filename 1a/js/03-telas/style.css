@@ -14,12 +14,12 @@
 }
 
 #cadastro{
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    display: none;
     border: 1px solid #666;
     /* background-color: aqua; */
     border-radius: 10px;
@@ -27,6 +27,14 @@
     margin: 10px;
     width: 300px;
     min-height: 100px;
+}
+
+#navbar{
+    display: none;
+}
+
+#produtos{
+    display: none;
 }
 
 .containerInput{
@@ -58,4 +66,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

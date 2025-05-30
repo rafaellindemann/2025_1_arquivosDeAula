@@ -7,41 +7,47 @@
     <title>Telas</title>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <button onclick="mostrarLogin()">Login</button>
         <button onclick="mostrarCadastro()">Cadastro</button>
+        <button onclick="mostrarProdutos()">Produtos</button>
     </nav>
-    <h1>Tela supimpa</h1>
-    <div id="login">
+    <h1>Teste login/cadastro</h1>
+    <section id="login">
         <h2>Login</h2>
         <div class="containerInput">
             <label for="">Nome</label>
-            <input type="text">
+            <input type="text" id="inpLogNome">
         </div>
         <div class="containerInput">
             <label for="">Senha</label>
-            <input type="password">
+            <input type="password" id="inpLogSenha">
         </div>
-        <button>Logar</button>
+        <button onclick="logar()">Logar</button>
 
-    </div>
+    </section>
 
-    <div id="cadastro">
+    <section id="cadastro">
         <h2>Cadastro</h2>
         <div class="containerInput">
             <label for="">Nome</label>
-            <input type="text">
+            <input type="text" id="inpCadNome">
         </div>
         <div class="containerInput">
             <label for="">E-mail</label>
-            <input type="password">
+            <input type="email" id="inpCadEmail">
         </div>
         <div class="containerInput">
             <label for="">Senha</label>
-            <input type="password">
+            <input type="password" id="inpCadSenha">
         </div>
-        <button>Logar</button>
-    </div>
+        <button onclick="cadastrar()">Cadastrar</button>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+
+    </section>
 
     <script src="script.js"></script>
 </body>
