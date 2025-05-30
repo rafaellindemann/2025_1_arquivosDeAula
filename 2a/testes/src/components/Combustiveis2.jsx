@@ -8,7 +8,7 @@ function Combustiveis2() {
     const[totalDiesel, setTotalDiesel] = useState(0)
   return (
     <div className='container'>  
-        <h2>Combustiveis</h2>
+        <h2>Combustiveis 2</h2>
         <div>
             Álcool <input type="number" value={inputAlcool} onChange={(event)=>setInputAlcool(event.target.value)}/> 
             <button onClick={()=>setTotalAlcool(totalAlcool+Number(inputAlcool))}>Comprar</button>
