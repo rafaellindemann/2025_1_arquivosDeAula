@@ -3,38 +3,40 @@
 
 inicializar()
 
-
-let usuario = {
-    nome: '',
-    email: '',
-    senha: ''
-}
+let usuarios = []
 
 function cadastrar(){
-    usuario.nome = document.getElementById('inpCadNome').value
-    usuario.email = document.getElementById('inpCadEmail').value
-    usuario.senha = document.getElementById('inpCadSenha').value
-    alert("Cadastrado com sucesso!! :D")
+    let usuario = {
+        nome: document.getElementById('inpCadNome').value,
+        email: document.getElementById('inpCadEmail').value,
+        senha: document.getElementById('inpCadSenha').value
+    }
 
-    console.log(usuario)
-
+    usuarios.push(usuario)
     limparInputs()
     mostrarLogin()
-    
+
+    alert("Cadastrado com sucesso!! :D")
+
+    console.log(usuarios) // só pra teste
 }
 
 function logar(){
-    let nome = document.getElementById('inpLogNome').value
+    let nomeMail = document.getElementById('inpLogNome').value
     let senha = document.getElementById('inpLogSenha').value
 
-    if((nome === usuario.nome || nome === usuario.email) && senha === usuario.senha){
-        alert("Login efetuado com sucesso!")
-        limparInputs()
-        mostrarProdutos()
-        // document.getElementById('navbar').style.display = 'block'
-    }else{
-        alert("Login não efetuado sem sucesso!")
+    for(let i=0; i<usuarios.length; i++){
+        if((nomeMail === usuarios[i].nome || nomeMail === usuarios[i].email) && senha === usuarios[i].senha){
+            alert("Login efetuado com sucesso! Olá " + usuarios[i].nome)
+            limparInputs()
+            mostrarProdutos()
+            // document.getElementById('navbar').style.display = 'block'
+        }
+        // else{
+        //     alert("Login não efetuado sem sucesso!")
+        // }
     }
+    
 }
 
 
@@ -54,6 +56,8 @@ function mostrarCadastro(){
 function mostrarProdutos(){
     esconderTodas()
     document.getElementById('produtos').style.display = 'flex'
+    document.getElementById('navbar').style.display = 'flex' // faz a navbar aparecer
+
 }
 
 
@@ -61,6 +65,7 @@ function esconderTodas(){
     document.getElementById('login').style.display = 'none'
     document.getElementById('cadastro').style.display = 'none'
     document.getElementById('produtos').style.display = 'none'
+
     // esconder novas páginas
 }
 

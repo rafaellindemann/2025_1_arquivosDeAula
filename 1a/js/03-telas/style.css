@@ -73,3 +73,15 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.bt-secundario{
+    background-color: #eee;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
