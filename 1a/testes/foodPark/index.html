@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerador de Prompt - Parque da Comida</title>
+  <style>
+    textarea {
+      width: 100%;
+      height: 120px;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Gerador de Prompt para Imagem de Comida</h2>
+
+  <label for="comida">Nome do prato:</label><br>
+  <input id="comida" type="text" placeholder="Ex: X-Bacon"><br><br>
+
+  <label for="ingredientes">Ingredientes principais:</label><br>
+  <input id="ingredientes" type="text" placeholder="Ex: pão, bacon, queijo, carne"><br><br>
+
+  <label for="estilo">Estilo da imagem:</label><br>
+  <select id="estilo">
+    <option value="realista">Foto realista</option>
+    <option value="ilustracao colorida">Ilustração colorida</option>
+    <option value="estilo cartoon">Desenho estilo cartoon</option>
+    <option value="aquarela artística">Aquarela artística</option>
+    <option value="estilo retrô anos 50">Estilo retrô anos 50</option>
+    <option value="foto com fundo preto">Foto com fundo preto</option>
+    <option value="estilo minimalista">Estilo minimalista</option>
+    <option value="estilo kawaii">Estilo kawaii</option>
+  </select><br><br>
+
+  <button onclick="gerarPrompt()">Gerar prompt</button><br>
+
+  <textarea id="promptGerado" readonly placeholder="O prompt aparecerá aqui..."></textarea><br>
+  <button onclick="copiarPrompt()">📋 Copiar prompt</button><br><br>
+
+  <a id="linkChatGPT" href="https://chat.openai.com" target="_blank">
+    🔗 Abrir ChatGPT (cole o prompt lá)
+  </a>
+
+  <script>
+    function gerarPrompt() {
+      const comida = document.getElementById('comida').value.trim()
+      const ingredientes = document.getElementById('ingredientes').value.trim()
+      const estilo = document.getElementById('estilo').value
+
+      const inicio = {
+        "realista": "Foto realista de um(a)",
+        "ilustracao colorida": "Ilustração colorida e detalhada de um(a)",
+        "estilo cartoon": "Desenho estilo cartoon de um(a)",
+        "aquarela artística": "Imagem em aquarela artística de um(a)",
+        "estilo retrô anos 50": "Imagem estilo retrô dos anos 50 de um(a)",
+        "foto com fundo preto": "Foto de estúdio com fundo preto de um(a)",
+        "estilo minimalista": "Arte digital minimalista representando um(a)",
+        "estilo kawaii": "Desenho fofo estilo kawaii de um(a)"
+      }
+
+      if (!comida || !ingredientes) {
+        alert("Por favor, preencha todos os campos.")
+        return
+      }
+
+      const base = `${inicio[estilo]} ${comida} servido no estilo de food truck. O prato está bem apresentado sobre uma superfície rústica de madeira, com boa iluminação, ângulo de 45 graus. Ingredientes principais visíveis: ${ingredientes}. Deve parecer apetitoso, digno de estar em destaque em um cardápio moderno. Fundo levemente desfocado, ambiente descontraído de parque gastronômico.`
+
+      document.getElementById('promptGerado').value = base
+    }
+
+    function copiarPrompt() {
+      const textarea = document.getElementById('promptGerado')
+      textarea.select()
+      document.execCommand('copy')
+      alert("Prompt copiado! Agora cole no ChatGPT 😊")
+    }
+  </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerador de Prompt para Imagem de Comida</title>
+</head>
+<body>
+  <h2>Prompt Generator - Parque da Comida</h2>
+
+  <label for="comida">Nome do prato:</label>
+  <input id="comida" type="text" placeholder="Ex: X-Bacon"><br><br>
+
+  <label for="ingredientes">Ingredientes principais:</label>
+  <input id="ingredientes" type="text" placeholder="Ex: pão, bacon, queijo, carne"><br><br>
+
+  <label for="estilo">Estilo da imagem:</label>
+  <select id="estilo">
+    <option value="realista">Foto realista</option>
+    <option value="ilustracao colorida">Ilustração colorida</option>
+    <option value="estilo cartoon">Desenho estilo cartoon</option>
+    <option value="aquarela artística">Aquarela artística</option>
+    <option value="estilo retrô anos 50">Estilo retrô anos 50</option>
+    <option value="foto com fundo preto">Foto com fundo preto</option>
+    <option value="estilo minimalista">Estilo minimalista</option>
+    <option value="estilo kawaii">Estilo kawaii</option>
+  </select><br><br>
+
+  <button onclick="gerarPrompt()">Gerar prompt + link</button>
+
+  <p id="saida"></p>
+
+  <script>
+    function gerarPrompt() {
+      const comida = document.getElementById('comida').value
+      const ingredientes = document.getElementById('ingredientes').value
+      const estilo = document.getElementById('estilo').value
+
+      const inicio = {
+        "realista": "Foto realista de um(a)",
+        "ilustracao colorida": "Ilustração colorida e detalhada de um(a)",
+        "estilo cartoon": "Desenho estilo cartoon de um(a)",
+        "aquarela artística": "Imagem em aquarela artística de um(a)",
+        "estilo retrô anos 50": "Imagem estilo retrô dos anos 50 de um(a)",
+        "foto com fundo preto": "Foto de estúdio com fundo preto de um(a)",
+        "estilo minimalista": "Arte digital minimalista representando um(a)",
+        "estilo kawaii": "Desenho fofo estilo kawaii de um(a)"
+      }
+
+      const base = `${inicio[estilo]} ${comida} servido no estilo de food truck. O prato está bem apresentado sobre uma superfície rústica de madeira, com boa iluminação, ângulo de 45 graus. Ingredientes principais visíveis: ${ingredientes}. Deve parecer apetitoso, digno de estar em destaque em um cardápio moderno. Fundo levemente desfocado, ambiente descontraído de parque gastronômico.`
+
+      const promptFinal = encodeURIComponent(base)
+      const link = `https://chat.openai.com/chat?prompt=${promptFinal}`
+
+      document.getElementById('saida').innerHTML = `
+        <strong>Prompt gerado:</strong><br>
+        ${base}<br><br>
+        <a href="${link}" target="_blank">✨ Abrir prompt no ChatGPT</a>
+      `
+    }
+  </script>
+</body>
+</html> -->
