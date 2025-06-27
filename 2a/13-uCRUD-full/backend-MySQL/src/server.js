@@ -69,7 +69,13 @@ app.get('/clientes/:id', async (req, res) => {
 
 app.post('/clientes', async (req, res) => {
     const { nome, endereco, email, telefone } = req.body;
+    console.log('objeto vindo do front', req.body)
     try {
+        const [client] = await pool.query('SELECT * FROM clientes where email = ?', [email]);
+        if(client){
+           return res.status(400).json("Já existe um cliente com esse email");
+        }
+
         const [result] = await pool.query(
             'INSERT INTO clientes (nome, endereco, email, telefone) VALUES (?, ?, ?, ?)',
             [nome, endereco, email, telefone]

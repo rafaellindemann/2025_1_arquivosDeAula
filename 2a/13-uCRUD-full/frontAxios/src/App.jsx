@@ -11,9 +11,11 @@ function App() {
     const [inputEndereco, setInputEndereco] = useState('')
     const [inputTelefone, setInputTelefone] = useState('')
 
+  
     const fetchClientes = async () => {
         try {
             const response = await axios.get('http://localhost:3000/clientes');
+            console.log('objeto axios',response)
             setClientes(response.data);
         } catch (error) {
             console.error('Erro ao buscar clientes:', error);
