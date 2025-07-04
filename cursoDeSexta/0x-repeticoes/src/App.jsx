@@ -11,12 +11,62 @@ function App() {
     }
   }
 
+  function revisarWhile(){ // somente exemplo
+    let i = 0 // 1o grande pilar da repetição
+    while(i < 10){ // 2o
+      // coisa a ser repetida
+      i++ // 3o
+    }
+  }
+
+  function lerValores(){
+    let soma = 0, valor
+    let i = 0
+    while(i < 3){
+      i++
+      valor = Number(prompt(`Digite o ${i}o valor: `))
+      soma += valor //soma = soma + valor
+    }
+    alert("Soma: " + soma)
+  }
+
+  function demoDoWhile(){ // garantir que o valor é positivo
+    let valor
+    do{
+      valor = Number(prompt("Digita um positivo:"))
+    // }while(valor <= 0);
+    }while(!(valor > 0));
+    alert('O valor digitado foi: ' + valor)
+  }
+
+  function demoFor(){
+    
+    for(let i=0; i<10; i++){
+      console.log(i);
+      
+    }
+  }
+
+  function gerarTabuada(){
+    let n = Number(prompt("Você quer a tabuada de qual número?"))
+    for(let i=1; i<=10; i++){
+      //          1x2=2
+      let resultado = i*n
+      console.log(i+'x'+n+'='+ resultado);      
+    }
+  }
+
+
   return (
     <>
       <h1>Repetições</h1>
       <section>
         <h2>while</h2>
         <button onClick={demonstrarWhile}>demo while</button>
+        <button onClick={lerValores}>ler valores</button>
+        <button onClick={demoDoWhile}>do while</button>
+        <button onClick={demoFor}>for</button>
+        <button onClick={gerarTabuada}>Tabuada</button>
       </section>
       {/* <section>
         <h2>for</h2>
