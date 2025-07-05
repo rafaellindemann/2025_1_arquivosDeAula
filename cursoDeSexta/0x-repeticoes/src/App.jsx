@@ -63,6 +63,19 @@ function App() {
     }
   }
 
+  function gerarIntervalo(){
+    // for(let i=10; i<=1000; i++){
+    //   if(i<=500 || i>=900){
+    //     console.log(i);
+    //   }
+    // }
+    for(let i=10; i<=1000; i++){
+      if(i==501){
+        i=900
+      }
+      console.log(i);
+    }
+  }
 
   return (
     <>
@@ -75,6 +88,7 @@ function App() {
         <button onClick={demoFor}>for</button>
         <button onClick={gerarTabuada}>Tabuada</button>
         <button onClick={gerarTabela}>Xerox</button>
+        <button onClick={gerarIntervalo}>Intervalão</button>
       </section>
       {/* <section>
         <h2>for</h2>
