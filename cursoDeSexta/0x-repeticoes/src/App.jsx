@@ -56,6 +56,13 @@ function App() {
     }
   }
 
+  function gerarTabela(){
+    for(let i=1; i<=500; i++){
+      let preco = i * 0.33
+      console.log(i + ": R$" + preco.toFixed(2).replace('.', ','));
+    }
+  }
+
 
   return (
     <>
@@ -67,6 +74,7 @@ function App() {
         <button onClick={demoDoWhile}>do while</button>
         <button onClick={demoFor}>for</button>
         <button onClick={gerarTabuada}>Tabuada</button>
+        <button onClick={gerarTabela}>Xerox</button>
       </section>
       {/* <section>
         <h2>for</h2>
