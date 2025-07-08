@@ -1,6 +1,7 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import './App.css';
+import ImageCarousel from './components/ImageCarousel';
 
 function App() {
   return (
@@ -33,8 +34,14 @@ function App() {
           <img src="/img/6.jpg" alt="Gatinho 4" />
         </SplideSlide>
       </Splide>
+      <hr />
+      <h2>Demo do carrossel na unha</h2>
+      <p>Aproveitando que já estamos aqui, bora fazer o demo deste também (não tem a ver com o do Splide ali em cima...)</p>
+      <ImageCarousel />
     </div>
   );
 }
 
 export default App;
+
+
