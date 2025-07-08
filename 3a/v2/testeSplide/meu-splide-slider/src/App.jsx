@@ -10,12 +10,12 @@ function App() {
       <Splide
         options={{
           type: 'loop',
-          perPage: 2,
+          perPage: 3,
           autoplay: true,
           interval: 3000,
           pauseOnHover: true,
           arrows: true,
-          pagination: true,
+          pagination: false,
           gap: '1rem',
         }}
         aria-label="Imagens de exemplo"
