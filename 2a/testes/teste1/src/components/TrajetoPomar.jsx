@@ -38,9 +38,7 @@ function TrajetoPomar() {
         { totalBergamota>0 && <div>{inputBergamota}x Bergamota: {totalBergamota}</div> }
         { totalBanana>0 && <div>{inputBanana}x Banana: {totalBanana}</div> }
         { totalPera>0 && <div>{inputPera}x Pera: {totalPera}</div> }
-        <div>
-            Total: R$ {(totalMaca+totalLaranja+totalBergamota+totalBanana+totalPera).toFixed(2)}
-        </div>
+        <div>Total: R$ {(totalMaca+totalLaranja+totalBergamota+totalBanana+totalPera).toFixed(2)}</div>
     </div>
   )
 }
