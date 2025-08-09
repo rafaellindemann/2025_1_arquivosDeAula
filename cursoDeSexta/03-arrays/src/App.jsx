@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   const [min, setMin] = useState([])
   const [max, setMax] = useState([])
+  const [med, setMed] = useState([])
 
   function gerar(){
     let tempMin = min
@@ -20,10 +21,9 @@ function App() {
         tempMax.push(n2)
         tempMin.push(n1)
       }
-  
     }
-    console.table(tempMin)
-    console.table(tempMax)
+    // console.table(tempMin)
+    // console.table(tempMax)
     setMax(tempMax)
     setMin(tempMin)
   }
@@ -31,7 +31,15 @@ function App() {
   return (
     <>
       <button onClick={gerar}>gerar número</button>
-      
+      {min.length}
+      {max.length}
+      <div>
+        {min.map((minima, index) => (
+          <p key={index}>
+            {minima}
+          </p>
+        ))}
+      </div>
     </>
   )
 }
