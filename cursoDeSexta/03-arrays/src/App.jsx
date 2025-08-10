@@ -7,8 +7,8 @@ function App() {
   const [med, setMed] = useState([])
 
   function gerar(){
-    let tempMin = min
-    let tempMax = max
+    let tempMin = [...min]
+    let tempMax = [...max]
     for(let i=0; i<30; i++){
 
       let n1 = Math.floor(Math.random() * 24 + 12)
