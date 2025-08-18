@@ -22,9 +22,6 @@ function App() {
         tempMin.push(n1)
       }
     }
-
-    
-
     // console.table(tempMin)
     // console.table(tempMax)
     setMax(tempMax)
